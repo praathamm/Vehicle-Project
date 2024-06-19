@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Landing Page</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <header>
+        <nav>
+            
+
+            
+              <div class="logo-text">Configurator™</div>
+              <ul>
+                <li><a href="aboutus.html" id="about-link">About Us</a></li>
+                <li><a href="contactus.html" id="contact-link">Contact Us</a></li>
+                <li><a href="regis.html" id="registration-link">Registration</a></li>
+                <li><a href="#" class="sign-up">Sign Up</a></li>
+              </ul>
+              
+            
+        </nav>
+    </header>
+
+    <main>
+        <section class="landing-page">
+            <div class="content">
+                <h1>Find, book and rent a car <span>Easily</span></h1>
+                <p>Get a car wherever and whenever you need it with your iOS and Android device.</p>
+                <form class="account-form">
+                    <label for="email">Create an account</label>
+                    <input type="email" id="email" placeholder="email@domain.com">
+                    <button type="submit">Sign up with email</button>
+                    <div class="divider">or continue with</div>
+                    <button type="button" class="google-signup">Google</button>
+                </form>
+                <div class="search-form">
+                    <input type="text" placeholder="Search your location">
+                    <input type="date">
+                    <input type="date">
+                    <button type="button">Search</button>
+                </div>
+            </div>
+            <div class="car-image">
+                <img src="honda_city.png" alt="Honda City">
+            </div>
+        </section>
+    </main>
+
+    
+    <script>
+        document.getElementById('registration-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = 'regis.html';
+        });
+    </script>
+    <script>
+        document.getElementById('about-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = 'aboutus.html';
+        });
+    </script>
+    <script>
+        document.getElementById('contact-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = 'contactus.html';
+        });
+    </script>
+</body>
+</html>

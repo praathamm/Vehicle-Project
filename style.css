@@ -1,0 +1,39 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.image-container {
+    position: relative;
+    text-align: left;
+    color: white;
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 40%;
+    left: 5%; /* Adjust the percentage to position the text horizontally */
+    transform: translateY(-50%); /* Center vertically */
+    background-color: rgba(0, 0, 0, 0.1); /* Optional: to make text more readable */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}

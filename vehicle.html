@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page with Text on Image</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('background.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            overflow: hidden; /* Make the page unscrollable */
+        }
+
+        header {
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background-color: rgba(128, 128, 128, 0.2); /* Semi-transparent background */
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            color: white; /* Logo text color */
+        }
+
+        .logo-text img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white; /* Navbar text color */
+            font-weight: bold;
+        }
+
+        .image-container {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Hide overflow for unscrollable effect */
+        }
+
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .text-overlay {
+            color: white;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+            text-align: center;
+             /* Ensure text is above background image */
+        }
+
+        .text-overlay h1 {
+            font-size: 48px;
+            margin: 0 0 20px;
+        }
+
+        .text-overlay p {
+            font-size: 24px;
+            margin: 0;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-text">
+                <img src="logo.png" alt="Logo"> Configurator™
+            </div>
+            <ul>
+                <li><a href="aboutus.html" id="about-link">About Us</a></li>
+                <li><a href="contactus.html" id="contact-link">Contact Us</a></li>
+                <li><a href="regis.html" id="registration-link">Registration</a></li>
+                <li><a href="signup.html" class="sign-up">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="image-container">
+        <img src="bgfinal.jpg" alt="Background Image" class="background-image">
+        <div class="text-overlay">
+            <h1>Welcome to Our Website</h1>
+            <p>Your tagline or introductory text goes here.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

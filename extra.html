@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Ad</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #1c1c1c;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .ad-container {
+            text-align: left;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+        }
+        .ad-container h1 {
+            font-size: 36px;
+            margin: 0 0 10px;
+        }
+        .ad-container h2 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .ad-container p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .order-button {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #ff4500;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        .contact-info {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .contact-info a {
+            color: #ff4500;
+            text-decoration: none;
+        }
+        .car-image {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .cityscape {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://img.freepik.com/free-vector/cityscape-night-skyline-background_52683-14304.jpg?size=626&ext=jpg') no-repeat center center;
+            background-size: cover;
+            z-index: -1;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="cityscape"></div>
+    <div class="ad-container">
+        <h1>SPECIAL OFFER</h1>
+        <h2>RENT THE BEST CAR TODAY</h2>
+        <h2>FIND THE PERFECT CAR FOR TODAY</h2>
+        <p>We know the difference is in the details and that's why our car rental services, in the tourism and business industry, stand out for their quality and good taste.</p>
+        <a href="https://www.website.com" class="order-button">ORDER NOW</a>
+        <div class="contact-info">
+            <p>Contact us here</p>
+            <p>📞 <a href="tel:+91660638238">+91 660-63-8238</a></p>
+        </div>
+        <img src="https://img.freepik.com/free-photo/black-sedan-car_144627-38776.jpg" alt="Car Image" class="car-image">
+    </div>
+</body>
+</html>
